@@ -92,10 +92,15 @@ body{
 	padding-bottom: 20px;
 }
 #buttonTable img{
-	width: 100px;
+	width: 75px;
 }
 #buttonTable button{
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	border-radius: 100px;
 }
+#buttonTable button:active {
+	position:relative;
+	top:2px;
+}
+#buttonTable button:focus {outline:0;}
