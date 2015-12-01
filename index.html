@@ -3,65 +3,37 @@
 <head>
 	<title>UCB - Home</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="desktopStyle.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,400italic,300italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<!-- The element that encapsulates all other elements on the page -->
-	<div id="container" class="centered">
+	<div id="container">
 		<!-- The banner at the top of every page -->
 		<div id="header">
-			<table id="headerTable" class="centered">
-				<tr>
-					<td id="ucb">
-						UCB
-					</td>
-					<td id="title">
-						Home
-					</td>
-					<td id="menu">
-						<!-- This menu will appear when the screen is laptop/desktop width -->
-						<ul id="horizontalMenuList">
-							<li>Home</li>
-							<li>My Profile</li>
-							<li>Events</li>
-							<li>About UCB</li>
-						</ul>
-						<!-- This hamburger menu appears when the screen is mobile device width -->
-						<!-- <button id="hamburger"></button> -->
-						<!-- This menu will appear when the hamburger button is pressed -->
-						<!-- <ul id="verticalMenuList">
-							<li>Home</li>
-							<li>My Profile</li>
-							<li>Events</li>
-							<li>About UCB</li>
-						</ul> -->
-					</td>
-				</tr>
-			</table>
+			<div id="logo"></div>
+			<div id="title"></div>
+			<div id="menu"></div>
 		</div>
 		<!-- Everything below the header -->
-		<div id="homeContent" class="centered">
-			<table id="buttonTable" class="centered">
-				<tr>
-					<td>
-						<!-- Check-in button -->
-						<button type="button" id="checkinButton"><img src="check.png"></button>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<!-- Events button -->
-						<button type="button" id="eventsButton"><img src="events.png"></button>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<!-- My Diary button -->
-						<button type="button" id="myDiaryButton"><img src="diary.png"></button>
-					</td>
-				</tr>
-			</table>
-		</div>
+		<table id="buttonTable" class="centered">
+		<tr><td>
+			<!-- Check-in button -->
+			<button type="button" id="checkinButton" class="indexButton"></button>
+			<p class="indexButtonText">Check-in</p>
+		</td></tr>
+		<tr><td>
+			<!-- Events button -->
+			<a href="events/upcoming.html"><button type="button" id="eventsButton" class="indexButton"></button>
+			<p class="indexButtonText">Events</p></a>
+		</td></tr>
+		<tr><td>
+			<!-- My Diary button -->
+			<a href="diary"><button type="button" id="diaryButton" class="indexButton" onclick="location.href = 'diary';"></button>
+			<p class="indexButtonText">My Diary</p></a>
+		</td></tr>
+		</table>
+		
 	</div>
 </body>
 </html>
