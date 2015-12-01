@@ -24,5 +24,22 @@ $( window ).load(function() {
 			$(this).css("fontSize", "1em");
 		}
 	});
+	
+	$(".cameraButton").click(function () {
+		$(".photoMenu").toggle();
+	});
+
+    $(".boldButton").click(function () {
+        $(this).toggleClass("clickedButton");
+        $("#contentArea").toggleClass("boldButton");
+    });
+    $(".italicButton").click(function () {
+        $(this).toggleClass("clickedButton");
+        $("#contentArea").toggleClass("italicButton");
+    });
+    $(".underlineButton").click(function () {
+        $(this).toggleClass("clickedButton");
+        $("#contentArea").toggleClass("underlineButton");
+    });
 });
 

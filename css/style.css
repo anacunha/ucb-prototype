@@ -414,4 +414,48 @@ i.fa.fa-heart.like {
 	padding-left: .5em;
 	width: 20%;
 }
+.editor{
+  text-align: center;
+}
+.toolbar{
+  padding: 0px 10px 1px 10px;
+  background: buttonface;
+}
+.toolbarButton{
+  width: 4%;
+  padding-right: 10px;
+  border: 0;
+  text-align: center;
+  cursor: default;
+  font-size: large;
+}
+.clickedButton{
+  border: 1px;
+  background: grey;
+}
+.boldButton{
+  font-weight: bold;
+}
+.italicButton{
+  font-style: italic;
+}
+.underlineButton{
+  text-decoration: underline;
+}
+.cameraButton{
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  padding-left: 39%;
+}
+.content{
+  background: buttonface;
+  padding: 7px;
+}
+.photoMenu{
+  display: none;
+  text-align: center;
+  background: buttonface;
+  padding: 7px;
+}
 
