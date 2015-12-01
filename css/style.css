@@ -9,7 +9,13 @@ body {
 div {
   box-sizing: border-box;
 }
-
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:visited {
+	color: inherit;
+}
 .centered{
 	margin-left: auto;
 	margin-right: auto;
@@ -154,3 +160,47 @@ div {
   font-weight: 300; /* light */
   width: 30%;
 }
+
+/* MY DIARY STUFF */
+#diaryEvents{
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.diaryEvent{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #DDDDDC;
+}
+.diaryEvent .title{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.diaryEvent img{
+	padding-right: 10px;
+	width: 25%;
+	float: left;
+}
+.diaryEvent .text{
+	text-overflow: ellipses;
+    overflow: hidden;
+}
+.more{
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.button{
+	width: 100%;
+	margin-top: 10px;
+	background-color: #DDDDDC;
+	border: 1px solid grey;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+.button:active{
+	position: relative;
+	top: 2px;
+}
+.button:focus {outline:0;}
