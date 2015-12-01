@@ -77,6 +77,17 @@ h3 {
   width: 20%;
 }
 
+#mainMenu{
+	display: none;
+	position: relative;
+	top: 100px;
+	background-color: #BED970;
+	z-index: 20;
+	font-size: 3em;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
 /* Buttons */
 
 .button {
@@ -451,7 +462,7 @@ i.fa.fa-heart.like {
   cursor: pointer;
   position: relative;
   top: 10px;
-  padding-left: 39%;
+  margin-left: 39%;
 }
 .content{
   background: buttonface;
@@ -466,6 +477,7 @@ i.fa.fa-heart.like {
   text-align: center;
   background: buttonface;
   padding: 7px;
+  font-size: 2em;
 }
 #saveButton{
 	padding-bottom: 50px;

@@ -41,5 +41,9 @@ $( window ).load(function() {
         $(this).toggleClass("clickedButton");
         $("#contentArea").toggleClass("underlineButton");
     });
+	
+	$("#menu").click(function(){
+		$("#mainMenu").toggle();
+	});
 });
 
