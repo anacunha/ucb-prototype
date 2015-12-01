@@ -204,3 +204,15 @@ a:visited {
 	top: 2px;
 }
 .button:focus {outline:0;}
+
+/* EDIT ENTRY STUFF */
+#back{
+	float: left;
+	font-size: 2em;
+	font-weight: 600;
+	height: 50px;
+	letter-spacing: .05em;
+	line-height: 50px;
+	padding-left: .5em;
+	width: 20%;
+}
