@@ -10,11 +10,18 @@ $( window ).load(function() {
 	$(".diaryEvent .more").click(function(){
 		if($(this).html().indexOf("less") >= 0){
 			var newHeight = $(this).parent().find("img").height();
-			$(this).parent().find(".text").height(newHeight);
+			var textElem = $(this).parent().find(".text");
+			textElem.height(newHeight);
+			textElem.css("fontSize", "2.5em");
 			$(this).html("... more");
+			$(this).css("fontSize", "2.5em");
 		} else {
 			$(this).parent().find(".text").height('auto');
+			var textElem = $(this).parent().find(".text");
+			textElem.height(newHeight);
+			textElem.css("fontSize", "1em");
 			$(this).html("... less");
+			$(this).css("fontSize", "1em");
 		}
 	});
 });
