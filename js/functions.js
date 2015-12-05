@@ -7,6 +7,7 @@ $( window ).load(function() {
 });
 
 $( window ).load(function() {
+
 	$(".diaryEvent .more").click(function(){
 		if($(this).html().indexOf("less") >= 0){
 			var newHeight = $(this).parent().find("img").height();
@@ -41,9 +42,9 @@ $( window ).load(function() {
         $(this).toggleClass("clickedButton");
         $("#contentArea").toggleClass("underlineButton");
     });
-	
-	$("#menu").click(function(){
+
+	/*$("#menu").click(function(){
 		$("#mainMenu").toggle();
-	});
+	});*/
 });
 

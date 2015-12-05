@@ -34,8 +34,14 @@ h3 {
   background-color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
-  
+  padding: 20px;
+  text-align: center;
 }
+
+#container a{
+  color: darkgrey;
+}
+
 
 #header {
   background-color: #BED970;
@@ -44,7 +50,7 @@ h3 {
 }
 
 #logo {
-  background: url("../images/logo.png") no-repeat center left;
+  //background: url("/images/logo.png") no-repeat center left;
   background-origin: content-box;
   background-size: contain;
   float: left;
@@ -54,6 +60,7 @@ h3 {
   letter-spacing: .05em;
   line-height: 70px;
   padding-left: .5em;
+  padding-top: 10px;
   width: 20%;
 }
 
@@ -68,14 +75,28 @@ h3 {
 }
 
 #menu {
-  background: url("../images/menu.png") no-repeat center right;
+  cursor: pointer;
+  font-size: x-large;
+  //background: url("../images/menu.png") no-repeat center right;
   background-origin: content-box;
   background-size: contain;
   float: right;
   height: 100px;
   padding-right: .5em;
-  width: 20%;
+  padding-top: 20px;
+  //width: 20%;
 }
+
+
+.navbar-nav .open .dropdown-menu {
+  //height: 30%;
+  width:100%;
+  font-size: xx-large;
+  position: inherit;
+  background: #BED970;
+}
+
+
 
 #mainMenu{
 	display: none;
@@ -89,6 +110,13 @@ h3 {
 }
 
 /* Buttons */
+
+.button-size{
+  padding: 20px;
+  width: 200px;
+  height: 20%;
+  color: #404040;
+}
 
 .button {
   background-color: #DDDDDC;
@@ -121,7 +149,7 @@ h3 {
 /* INDEX STUFF */
 
 #buttonTable {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 
@@ -362,7 +390,7 @@ i.fa.fa-heart.like {
 
 .user-post-links a:hover {
   /* background-color: #FFFFFF; */
-  background-color: #5CC0DE; 
+  background-color: #5CC0DE;
 }
 
 /* MY DIARY STUFF */
@@ -416,14 +444,12 @@ i.fa.fa-heart.like {
 /* EDIT ENTRY STUFF */
 
 #back{
-	float: left;
-	font-size: 3.5em;
-	font-weight: 600;
-	height: 100px;
-	letter-spacing: .05em;
-	line-height: 100px;
-	padding-left: .5em;
-	width: 20%;
+  float: left;
+  font-size: 3.5em;
+  font-weight: 600;
+  width: 20%;
+  position: relative;
+  top: 10px;
 }
 .editor{
   text-align: center;
@@ -431,12 +457,12 @@ i.fa.fa-heart.like {
   margin-bottom: 30px;
   border: 1px solid grey;
   width: 95%;
-  
+
 }
 .toolbar{
   padding: 10px 10px 1px 10px;
   background: buttonface;
-  
+
 }
 .toolbarButton{
   margin-right: 50px;
