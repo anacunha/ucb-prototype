@@ -1,0 +1,515 @@
+/* GENERAL STUFF */
+
+body {
+  background-color: lightgrey;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  /* color: inherit; */
+  color: #5CC0DE;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#container {
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#container a{
+  color: darkgrey;
+}
+
+
+#header {
+  background-color: #BED970;
+  border-bottom: 1px solid #000000;
+  height: 100px;
+}
+
+#logo {
+  //background: url("/images/logo.png") no-repeat center left;
+  background-origin: content-box;
+  background-size: contain;
+  float: left;
+  font-size: 4em;
+  font-weight: 900; /* black */
+  height: 100px;
+  letter-spacing: .05em;
+  line-height: 70px;
+  padding-left: .5em;
+  padding-top: 10px;
+  width: 20%;
+}
+
+#title {
+  font-size: 3.5em;
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+#menu {
+  cursor: pointer;
+  font-size: x-large;
+  //background: url("../images/menu.png") no-repeat center right;
+  background-origin: content-box;
+  background-size: contain;
+  float: right;
+  height: 100px;
+  padding-right: .5em;
+  padding-top: 20px;
+  //width: 20%;
+}
+
+
+.navbar-nav .open .dropdown-menu {
+  //height: 30%;
+  width:100%;
+  font-size: xx-large;
+  position: inherit;
+  background: #BED970;
+}
+
+
+
+#mainMenu{
+	display: none;
+	position: relative;
+	top: 100px;
+	background-color: #BED970;
+	z-index: 20;
+	font-size: 3em;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/* Buttons */
+
+.button-size{
+  padding: 20px;
+  width: 225px;
+  height: 20%;
+  color: #404040;
+}
+
+.button {
+  background-color: #DDDDDC;
+  /* background-color: #5CC0DE; */
+  border: 1px solid #979797;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  height: 2.5em;
+  margin-top: 1em;
+  outline: 0;
+  width: 100%;
+}
+
+.button:active {
+  position: relative;
+  top: 2px;
+}
+
+.button:hover {
+  /* background-color: #DDDDDC; */
+  background-color: #5CC0DE;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+/* INDEX STUFF */
+
+#buttonTable {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#buttonTable a {
+  color: inherit;
+}
+
+#buttonTable a:visited {
+  color: inherit;
+}
+
+.indexButton {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  float: left;
+}
+
+.indexButton:active {
+  position: relative;
+  top: 2px;
+}
+
+.indexButton:focus {
+  outline: 0;
+}
+
+#checkinButton {
+  background: url("../images/check.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#eventsButton {
+  background: url("../images/events.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#diaryButton {
+  background: url("../images/diary.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.indexButtonText {
+  font-size: 3em;
+  float: left;
+  padding-left: 20px;
+}
+
+/* EVENTS STUFF */
+
+#tabs {
+  height: 80px;
+  font-size: 3em;
+  font-weight: 600; /* semi-bold */
+  line-height: 80px;
+  text-align: center;
+}
+
+#upcoming {
+  border-right: 1px solid #000000;
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+#past {
+  background-color: #DDDDDC;
+  border-bottom: 1px solid #000000;
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+
+#events {
+  clear: both;
+}
+
+.event {
+  border-bottom: 1px solid #DDDDDC;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.event:hover {
+  background-color: #DDDDDC;
+}
+
+.event .title {
+  float: left;
+  font-size: 3em;
+  width: 70%;
+}
+
+.event .date {
+  float: right;
+  font-size: 2.5em;
+  font-weight: 300;
+  /* light */
+  width: 30%;
+}
+
+/* EVENT INFO STUFF */
+
+#event-tab {
+  border-bottom: 1px solid #000000;
+  height: 100px;
+  font-size: 3.5em;
+  font-weight: 600; /* semi-bold */
+  line-height: 100px;
+  text-align: center;
+}
+
+#event-date {
+  font-size: 1.25em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 1em;
+}
+
+#event-container {
+  padding: 0 1em 1em 1em;
+}
+
+#event-info {
+  padding: 0 1em;
+}
+
+.map {
+  border: 1px solid #979797;
+  display: block;
+  height: auto;
+  margin: 2em auto 2em auto;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 90%;
+}
+
+#attendees {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.attendee {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.placeholder {
+  background-color: #DDDDDC;
+  height: 70px;
+  margin: auto;
+  margin-bottom: .5em;
+  width: 70px;
+}
+
+#more {
+  clear: both;
+  float: right;
+  padding-top: .75em;
+  padding-right: 1em;
+}
+
+.post {
+  border: 1px solid #DDDDDC;
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.post p {
+  color: #979797;
+}
+
+i.fa.fa-heart.like {
+  color: #F26D61;
+  font-size: 0.8em;
+  padding-right: 2em;
+}
+
+.post-links {
+  text-align: right;
+}
+
+.user-post {
+  color: #979797;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  margin-top: 0;
+  resize: none;
+  width: 100%;
+}
+
+/* User Post placeholder text color */
+
+.user-post::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #DDDDDC;
+}
+
+.user-post:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #DDDDDC;
+  opacity: 1;
+}
+
+.user-post::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #DDDDDC;
+  opacity: 1;
+}
+
+.user-post:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #DDDDDC;
+}
+
+.user-post-links {
+  height: auto;
+  margin-bottom: 1.5em;
+  text-align: right;
+}
+
+.user-post-links a {
+  /* background-color: #5CC0DE; */
+  background-color: #FFFFFF;
+  border: 1px solid #979797;
+  color: #000000;
+  padding: 0.25em 1.25em;
+}
+
+.user-post-links a:hover {
+  /* background-color: #FFFFFF; */
+  background-color: #5CC0DE;
+}
+
+/* MY DIARY STUFF */
+
+#diaryEvents{
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.diaryEvent{
+	padding-bottom: 40px;
+	border-bottom: 1px solid #DDDDDC;
+}
+.diaryEvent .title{
+	font-size: 2em;
+	font-weight: bold;
+}
+.diaryEvent img{
+	padding-right: 10px;
+	width: 25%;
+	float: left;
+}
+.diaryEvent .text{
+	-webkit-text-size-adjust: none;
+	font-size: 2.5em;
+	text-overflow: ellipses;
+    overflow: hidden;
+}
+.more{
+	font-weight: bold;
+	font-size: 1em;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.button{
+	width: 100%;
+	margin-top: 10px;
+	background-color: #DDDDDC;
+	border: 1px solid grey;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+.button:active{
+	position: relative;
+	top: 2px;
+}
+.button:focus {outline:0;}
+
+/* EDIT ENTRY STUFF */
+
+#back{
+  float: left;
+  font-size: 3.5em;
+  font-weight: 600;
+  width: 20%;
+  position: relative;
+  top: 10px;
+}
+.editor{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: 1px solid grey;
+  width: 95%;
+
+}
+.toolbar{
+  padding: 10px 10px 1px 10px;
+  background: buttonface;
+
+}
+.toolbarButton{
+  margin-right: 50px;
+  border: 0;
+  text-align: center;
+  cursor: default;
+  font-size: 3em;
+}
+.clickedButton{
+  border: 1px;
+  background: grey;
+}
+.boldButton{
+  font-weight: bold;
+}
+.italicButton{
+  font-style: italic;
+}
+.underlineButton{
+  text-decoration: underline;
+}
+.cameraButton{
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  margin-left: 39%;
+}
+.content{
+  background: buttonface;
+  padding: 7px;
+}
+#contentArea{
+	width: 95%;
+	font-size: 2em;
+}
+.photoMenu{
+  display: none;
+  text-align: center;
+  background: buttonface;
+  padding: 7px;
+  font-size: 2em;
+}
+#saveButton{
+	padding-bottom: 50px;
+	width: 90%;
+}
+
+/* PROFILE STUFF */
+.fonts{
+  font-size: xx-large;
+}
+.form-horizontal .control-label{
+  text-align: left;
+}
+.FAQ-1{
+    width: 300px;
+    padding: 25px;
+    border: 5px solid navy;
+    margin: 25px;
+	float: top;
+	text-align: left;
+
+}
