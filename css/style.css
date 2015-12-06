@@ -113,7 +113,7 @@ h3 {
 
 .button-size{
   padding: 20px;
-  width: 200px;
+  width: 225px;
   height: 20%;
   color: #404040;
 }
@@ -510,3 +510,10 @@ i.fa.fa-heart.like {
 	width: 90%;
 }
 
+/* PROFILE STUFF */
+.fonts{
+  font-size: xx-large;
+}
+.form-horizontal .control-label{
+  text-align: left;
+}
