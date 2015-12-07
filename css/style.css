@@ -85,7 +85,6 @@ h3 {
   //width: 20%;
 }
 
-
 .navbar-nav .open .dropdown-menu {
   //height: 30%;
   width:100%;
@@ -192,9 +191,7 @@ h3 {
 
 /* EVENTS STUFF */
 
-#upcomingContainer{
-	background-color: #FFFFFF;
-}
+
 
 #tabs {
   height: 50px;
@@ -205,8 +202,11 @@ h3 {
 }
 
 #upcoming {
+  background-color: #FFFFFF;
   border-right: 1px solid #000000;
   border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #DDDDDC;
   float: left;
   height: 100%;
   width: 50%;
@@ -221,6 +221,9 @@ h3 {
 }
 
 #events {
+  background-color: #FFFFFF;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
   clear: both;
 }
 
