@@ -18,8 +18,9 @@ $( window ).load(function() {
         $("#contentArea").toggleClass("underlineButton");
     });
 
-	/*$("#menu").click(function(){
-		$("#mainMenu").toggle();
-	});*/
+	$(".promptChoice").click(function(){
+		var thisChoice = $(this).html();
+		$("#contentArea").html(thisChoice);
+	});
 });
 

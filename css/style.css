@@ -191,8 +191,6 @@ h3 {
 
 /* EVENTS STUFF */
 
-
-
 #tabs {
   height: 50px;
   font-size: 1.5em;
@@ -426,8 +424,8 @@ i.fa.fa-heart.like {
 
 .editor{
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 1px solid grey;
   width: 100%;
   background: buttonface;
