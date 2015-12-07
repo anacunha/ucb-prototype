@@ -1,0 +1,117 @@
+<h1>StaticPages#help</h1>
+<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, "Help") %>
+
+<font size=+1 face=sans-serif color=#5CC0DE>
+  <h3 style="text-align:left; padding-left:85px;">EVENTS FAQ</h3>
+  <div class="FAQ-1">
+    
+    <a href="#answer1" onclick="showhide('answer1');">
+      Q1) How to see upcoming/past events?
+    </a>
+    
+    <hr style="border-width: 3px;">
+    <div id="answer1" style="display:none">
+      <p>Click events button on home page and it will take you to a page that show two tabs showing upcoming and past events.</p>
+    </div>
+
+    <a href="#answer2" onclick="showhide('answer2');">
+      Q2) How to find event's location?
+    </a>
+
+    <hr style="border-width: 3px;">
+    <div id="answer2" style="display:none">
+      <p>1) Click events button on home page and it will take you to a page that show two tabs showing upcoming and past events.</p>
+      <p>2) Click on the event you want to find location of, this will lead you to page with map showing location of event.</p>
+    </div>
+
+    <a href="#answer3" onclick="showhide('answer3');">
+      Q3) How to know the agenda of event?
+    </a>
+
+    <hr style="border-width: 3px;">
+    <div id="answer3" style="display:none">
+      <p>1) Click events button on home page and it will take you to a page that show two tabs showing upcoming and past events.</p>
+      <p>2) Click on the event you want to find agenda of, this will lead you to page with event's agenda written on top</p>
+    </div>
+
+    <a href="#answer4" onclick="showhide('answer4');">
+      Q4) How to know who's going/went to a particular event?
+    </a>
+
+    <hr style="border-width: 3px;">	
+    <div id="answer4" style="display:none">
+      <p>1) Click events button on home page and it will take you to a page that show two tabs showing upcoming and past events.</p>
+      <p>2) Click on the event you want to find who is going, this will lead you to page showing all people just below the map showing location of event under heading "who is going"</p>
+    </div>
+
+    <a href="#answer5" onclick="showhide('answer5');">
+      Q5) How to tell others that you are going to a particular event? 
+    </a>
+
+    <hr style="border-width: 3px;">
+    <div id="answer5" style="display:none">
+      <p>1) Click events button on home page and it will take you to a page that show two tabs showing upcoming and past events.</p>
+      <p>2) Click on the event under upcoming tab you want to go, this will lead you to page showing a button which says "I am going" below the list of people under heading "who is going"</p>
+    </div>
+
+    <a href="#answer6" onclick="showhide('answer6');">
+      Q6) How to create/reply to a post? 
+    </a>
+
+    <hr style="border-width: 3px;">
+    <div id="answer6" style="display:none">
+      <p>1) Click events button on home page and it will take you to a page that show two tabs showing upcoming and past events.</p>
+      <p>2) At the end of page you can either create a new post or reply to a post.</p>
+    </div>
+  </div>
+</font>
+
+<font size=+1 face=sans-serif color=#5CC0DE>
+  <h3 style="text-align:left; padding-left:25px;">MY-DIARY/PROFILE FAQ</h3>
+  <div class="FAQ-1">
+
+    <a href="#answer9" onclick="showhide('answer9');">
+      Q1) How to edit/add new diary entry?
+    </a>
+
+    <hr style="border-width: 3px;">
+    <div id="answer9" style="display:none">
+      <p>1) Click "MY DIARY" button on home page</p>
+      <p>2) Below the event you will find two buttons saying either "EDIT ENTRY" or "CREATE ENTRY"</p>
+    </div>
+
+    <a href="#answer10" onclick="showhide('answer10');">
+      Q2) How to upload picture to diary entry?
+    </a>
+
+    <hr style="border-width: 3px;">
+    <div id="answer10" style="display:none">
+      <p>1) Click "MY DIARY" button on home page </p>
+      <p>2) Below every entry you will find two buttons saying either "EDIT ENTRY" or "CREATE ENTRY", click</p>
+      <p>3) Click any button you want to upload image for and will see an icon for camera.</p>
+    </div>
+
+    <a href="#answer11" onclick="showhide('answer11');">
+      Q3) How to update personal-info/contact-info?
+    </a>
+
+    <hr style="border-width: 3px;">
+    <div id="answer10" style="display:none">
+      <p>1) Click on ham-burger menu on right top of header and select MY PROFILE.</p>
+      <p>2) It will show two tabs "PERSONAL INFO" and "CONTACT INFO"</p>
+      <p>3) Add/edit info and press "SAVE" button</p>
+    </div>
+  </div>
+</font>
+
+<script Type="text/javascript">
+  function showhide(element) {
+    if (document.getElementById(element).style.display == 'block') {
+      document.getElementById(element).style.display = 'none';
+    }
+    else {
+      document.getElementById(element).style.display = 'block';
+    }
+  }
+</script>
