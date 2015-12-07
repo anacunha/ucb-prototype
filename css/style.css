@@ -58,17 +58,16 @@ h3 {
   height: 100px;
   letter-spacing: .05em;
   line-height: 70px;
-  padding-left: .5em;
   padding-top: 10px;
   width: 20%;
 }
 
 #title {
-  font-size: 3.5em;
+  font-size: 2em;
   float: left;
   height: 100px;
   line-height: 100px;
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   width: 60%;
 }
@@ -110,10 +109,10 @@ h3 {
   border: 1px solid #979797;
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2.5em;
+  font-size: 1.2em;
   font-weight: 600;
   color: black;
-  height: 2.5em;
+  height: 1.7em;
   margin-top: 1em;
   outline: 0;
   width: 100%;
@@ -193,16 +192,21 @@ h3 {
 
 /* EVENTS STUFF */
 
+#upcomingContainer{
+	background-color: #FFFFFF;
+}
+
 #tabs {
-  height: 80px;
-  font-size: 3em;
+  height: 50px;
+  font-size: 1.5em;
   font-weight: 600; /* semi-bold */
-  line-height: 80px;
+  line-height: 50px;
   text-align: center;
 }
 
 #upcoming {
   border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
   float: left;
   height: 100%;
   width: 50%;
@@ -222,8 +226,8 @@ h3 {
 
 .event {
   border-bottom: 1px solid #DDDDDC;
-  height: 80px;
-  line-height: 80px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
 }
 
@@ -233,13 +237,13 @@ h3 {
 
 .event .title {
   float: left;
-  font-size: 3em;
+  font-size: 1.2em;
   width: 70%;
 }
 
 .event .date {
   float: right;
-  font-size: 2.5em;
+  font-size: 1em;
   font-weight: 300;
   /* light */
   width: 30%;
@@ -250,7 +254,7 @@ h3 {
 #event-tab {
   border-bottom: 1px solid #000000;
   height: 100px;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 600; /* semi-bold */
   line-height: 100px;
   text-align: center;
@@ -269,6 +273,7 @@ h3 {
 
 #event-info {
   padding: 0 1em;
+  text-align: left;
 }
 
 .map {
@@ -388,11 +393,11 @@ i.fa.fa-heart.like {
 	padding-right: 10px;
 }
 .diaryEvent{
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	border-bottom: 1px solid #DDDDDC;
 }
 .diaryEvent .title{
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 .diaryEvent img{
@@ -405,17 +410,17 @@ i.fa.fa-heart.like {
 	text-align: left;
 }
 
-
 /* EDIT ENTRY STUFF */
 
 #back{
   float: left;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 600;
   width: 20%;
   position: relative;
   top: 10px;
 }
+
 .editor{
   text-align: center;
   margin-top: 50px;
@@ -424,55 +429,67 @@ i.fa.fa-heart.like {
   width: 100%;
   background: buttonface;
 }
+
 #toolbar{
   padding-top: 10px;
   padding-bottom: 10px;
   width: 90%;
   background: buttonface;
-
 }
+
 .toolbarButton{
-  margin-right: 50px;
+  margin-right: 20%;
   border: 0;
   text-align: center;
   cursor: default;
-  font-size: 3em;
+  font-size: 1.5em;
 }
+
 .clickedButton{
   border: 1px;
   background: grey;
 }
+
 .boldButton{
   font-weight: bold;
 }
+
 .italicButton{
   font-style: italic;
 }
+
 .underlineButton{
   text-decoration: underline;
 }
+
 #camIconTd{
   width: 50%;
 }
+
 .cameraButton{
   cursor: pointer;
   position: relative;
-  height: 50%;
+  height: 30%;
 }
+
 .content{
   background: buttonface;
 }
+
 #contentArea{
 	width: 100%;
-	font-size: 2em;
+	font-size: 1em;
 }
+
 .photoMenu{
   display: none;
   text-align: center;
   background: buttonface;
   padding: 7px;
   font-size: 2em;
+  color: black;
 }
+
 #saveButton{
 	padding-bottom: 50px;
 	width: 90%;
