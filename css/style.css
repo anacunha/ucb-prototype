@@ -38,7 +38,7 @@ h3 {
   text-align: center;
 }
 
-#container a{
+#container a {
   color: darkgrey;
 }
 
@@ -46,20 +46,6 @@ h3 {
   background-color: #BED970;
   border-bottom: 1px solid #000000;
   height: 100px;
-}
-
-#logo {
-  //background: url("/images/logo.png") no-repeat center left;
-  background-origin: content-box;
-  background-size: contain;
-  float: left;
-  font-size: 4em;
-  font-weight: 900; /* black */
-  height: 100px;
-  letter-spacing: .05em;
-  line-height: 70px;
-  padding-top: 10px;
-  width: 20%;
 }
 
 #title {
@@ -85,17 +71,10 @@ h3 {
   //width: 20%;
 }
 
-.navbar-nav .open .dropdown-menu {
-  //height: 30%;
-  width:100%;
-  font-size: xx-large;
-  position: inherit;
-  background: #BED970;
-}
 
 /* Buttons */
 
-.button-size{
+.button-size {
   padding: 20px;
   width: 225px;
   height: 20%;
@@ -130,6 +109,7 @@ h3 {
 .button:focus {
   outline: 0;
 }
+
 
 /* INDEX STUFF */
 
@@ -189,12 +169,14 @@ h3 {
   padding-left: 20px;
 }
 
+
 /* EVENTS STUFF */
 
 #tabs {
   height: 50px;
   font-size: 1.5em;
-  font-weight: 600; /* semi-bold */
+  font-weight: 600;
+  /* semi-bold */
   line-height: 50px;
   text-align: center;
 }
@@ -250,13 +232,15 @@ h3 {
   width: 30%;
 }
 
+
 /* EVENT INFO STUFF */
 
 #event-tab {
   border-bottom: 1px solid #000000;
   height: 100px;
   font-size: 2em;
-  font-weight: 600; /* semi-bold */
+  font-weight: 600;
+  /* semi-bold */
   line-height: 100px;
   text-align: center;
 }
@@ -343,6 +327,7 @@ i.fa.fa-heart.like {
   width: 100%;
 }
 
+
 /* User Post placeholder text color */
 
 .user-post::-webkit-input-placeholder {
@@ -386,34 +371,40 @@ i.fa.fa-heart.like {
   background-color: #5CC0DE;
 }
 
+
 /* MY DIARY STUFF */
 
-#diaryEvents{
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+#diaryEvents {
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.diaryEvent{
-	padding-bottom: 30px;
-	border-bottom: 1px solid #DDDDDC;
+
+.diaryEvent {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #DDDDDC;
 }
-.diaryEvent .title{
-	font-size: 1.5em;
-	font-weight: bold;
+
+.diaryEvent .title {
+  font-size: 1.5em;
+  font-weight: bold;
 }
-.diaryEvent img{
-	margin-right: 20px;
-	width: 33%;
-	float: left;
+
+.diaryEvent img {
+  margin-right: 20px;
+  width: 33%;
+  float: left;
 }
-.diaryEvent .text{
-	font-size: 1em;
-	text-align: left;
+
+.diaryEvent .text {
+  font-size: 1em;
+  text-align: left;
 }
+
 
 /* EDIT ENTRY STUFF */
 
-#back{
+#back {
   float: left;
   font-size: 2em;
   font-weight: 600;
@@ -422,7 +413,7 @@ i.fa.fa-heart.like {
   top: 10px;
 }
 
-.editor{
+.editor {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -431,14 +422,14 @@ i.fa.fa-heart.like {
   background: buttonface;
 }
 
-#toolbar{
+#toolbar {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 90%;
   background: buttonface;
 }
 
-.toolbarButton{
+.toolbarButton {
   margin-right: 20%;
   border: 0;
   text-align: center;
@@ -446,38 +437,38 @@ i.fa.fa-heart.like {
   font-size: 1.5em;
 }
 
-.clickedButton{
+.clickedButton {
   border: 1px;
   background: grey;
 }
 
-.boldButton{
+.boldButton {
   font-weight: bold;
 }
 
-.italicButton{
+.italicButton {
   font-style: italic;
 }
 
-.underlineButton{
+.underlineButton {
   text-decoration: underline;
 }
 
-#camIconTd{
+#camIconTd {
   width: 50%;
 }
 
-.cameraButton{
+.cameraButton {
   cursor: pointer;
   position: relative;
   height: 30%;
 }
 
-.content{
+.content {
   background: buttonface;
 }
 
-.photoMenu{
+.photoMenu {
   display: none;
   text-align: center;
   background: buttonface;
@@ -486,15 +477,117 @@ i.fa.fa-heart.like {
   color: black;
 }
 
-#saveButton{
-	padding-bottom: 50px;
-	width: 90%;
+#saveButton {
+  padding-bottom: 50px;
+  width: 90%;
 }
 
+
 /* PROFILE STUFF */
-.fonts{
+
+.fonts {
   font-size: xx-large;
 }
-.form-horizontal .control-label{
+
+.form-horizontal .control-label {
   text-align: left;
+}
+
+
+/* Header */
+
+.navbar-default {
+  background-color: #bed970;
+  border-color: #bed970;
+}
+
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #255f8a;
+}
+
+.navbar-default .navbar-text {
+  color: #000000;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #255f8a;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #255f8a;
+  background-color: #bed970;
+  font-weight: 600;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #255f8a;
+  background-color: #bed970;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #bed970;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #bed970;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+
+.navbar-default .navbar-link {
+  color: #000000;
+}
+
+.navbar-default .navbar-link:hover {
+  color: #255f8a;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #255f8a;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #255f8a;
+    background-color: #bed970;
+    font-weight: 600;
+  }
+}
+
+
+/* Logo */
+
+#logo {
+  background: url('../images/logo2.png') no-repeat left/50%;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: .25em;
+  padding-left: .75em;
 }

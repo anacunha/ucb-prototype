@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>UCB - Family Game Night</title>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,400italic,300italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/functions.js"></script>
-      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css"/>
-      <link href="../css/style.css" rel="stylesheet">
-  </head>
-  <body>
-  <nav class="navbar navbar-default" id="header">
-      <div class="container-fluid">
-          <div class="navbar-header" id="logo">
-              <a class="navbar-brand" href="../index.html"><img src="../images/logo.png"></a>
-          </div>
-          
-          <div>
-              <ul class="nav navbar-nav" id="menu">
-                  <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown"><b>&#9776;</b></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="../index.html"><i class="fa fa-home">&nbsp;<span>Home</span></i></a></li>
-                          <li><a href="profile/personal-info.html"><i class="fa fa-user">&nbsp;<span>My Profile</span></i></a></li>
-                          <li><a href="#"><i class="fa fa-star">&nbsp;<span>UCB Points</span></i></a></li>
-                          <li><a href="#"><i class="fa fa-check-square-o">&nbsp;<span>Check-In</span></i></a></li>
-                          <li class="active"><a href="#"><i class="fa fa-calendar">&nbsp;<span>Events</span></i></a></li>
-                          <li><a href="../diary/diary.html"><i class="fa fa-pencil-square-o">&nbsp;<span>Diary</span></i></a></li>
-                          <li><a href="#"><i class="fa fa-question">&nbsp;<span>Help</span></i></a></li>
-                          <li><a href="#"><i class="fa fa-question-circle">&nbsp;<span>About UCB</span></i></a></li>
-                          <li><a href="#"><i class="fa fa-sign-out">&nbsp;<span>Logout</span></i></a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>UCB - Family Game Night</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,400italic,300italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/functions.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" />
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="logo" href="/">UCB</a>
       </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="/events/upcoming.html">Events</a></li>
+          <li class=""><a href="#">Check In</a></li>
+          <li class=""><a href="/diary/diary.html">My Diary</a></li>
+          <li class="">
+            <a href="/help/help.html">Help</a>
+          </li>
+          <li class="">
+            <a href="/aboutUCB/AboutUCB.html">About Us</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/profile/personal-info.html">View Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Sign out </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
   </nav>
-    <div id="container" class="container">
-      <!--<div id="header">
+  <div id="container" class="container">
+    <!--<div id="header">
         <a href="upcoming.html"><div id="back"><</div></a>
         <div id="title"></div>
         <div id="menu"></div>
@@ -51,69 +70,70 @@
 			<a href="../diary/diary.html"><div class="mainMenuItem">Diary</div></a>
 		</div>
       </div>-->
-      <div id="event-tab">
-        Family Game Night
+    <div id="event-tab">
+      Family Game Night
+    </div>
+    <div id="event-date">
+      Thursday, December 10th - 04:30 PM
+    </div>
+    <div id="event-container">
+      <p id="event-info">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas, sapien nec euismod ullamcorper, nulla arcu ultricies ex, quis lobortis nibh nulla sed sem. Donec a sollicitudin eros. Ut arcu augue, mollis id faucibus mattis, scelerisque a elit. Sed luctus ornare quam quis efficitur. Pellentesque quis euismod nisl. Fusce gravida nisi eget tellus tempus, id hendrerit magna varius. Nulla rutrum luctus libero et finibus.
+      </p>
+      <img class="map" src=../images/map.png>
+      <h3>Who is going?</h3>
+      <div id="attendees">
+        <div class="attendee">
+          <div class="placeholder"></div>
+          Ana
+        </div>
+        <div class="attendee">
+          <div class="placeholder"></div>
+          Lily
+        </div>
+        <div class="attendee">
+          <div class="placeholder"></div>
+          Stefan
+        </div>
+        <div class="attendee">
+          <div class="placeholder"></div>
+          Harshil K.
+        </div>
+        <div class="attendee">
+          <div class="placeholder"></div>
+          Harshil V.
+        </div>
+        <div class="attendee">
+          <div class="placeholder"></div>Hannah
+        </div>
       </div>
-      <div id="event-date">
-        Thursday, December 10th - 04:30 PM
+      <div id="more">
+        <a href="#">more</a>
       </div>
-      <div id="event-container">
-        <p id="event-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas, sapien nec euismod ullamcorper, nulla arcu ultricies ex, quis lobortis nibh nulla sed sem. Donec a sollicitudin eros. Ut arcu augue, mollis id faucibus mattis, scelerisque a elit. Sed luctus ornare quam quis efficitur. Pellentesque quis euismod nisl. Fusce gravida nisi eget tellus tempus, id hendrerit magna varius. Nulla rutrum luctus libero et finibus.
-        </p>
-        <img class="map" src=../images/map.png>        
-        <h3>Who is going?</h3>
-        <div id="attendees">
-          <div class="attendee">
-            <div class="placeholder"></div>
-            Ana
-          </div>
-          <div class="attendee">
-            <div class="placeholder"></div>
-            Lily
-          </div>
-          <div class="attendee">
-            <div class="placeholder"></div>
-            Stefan
-          </div>
-          <div class="attendee">
-            <div class="placeholder"></div>
-            Harshil K.
-          </div>
-          <div class="attendee">
-            <div class="placeholder"></div>
-            Harshil V.
-          </div>
-          <div class="attendee">
-            <div class="placeholder"></div>Hannah
-          </div>
+      <button id="going-button" class="button">I'm going</button>
+      <h3>Posts</h3>
+      <textarea class="post user-post" rows="4" placeholder="Create a post..."></textarea>
+      <div class="user-post-links">
+        <a href="#">Post</a>
+      </div>
+      <div class="post">
+        Maria F.
+        <p>Can't miss it!</p>
+        <div class="post-links">
+          <i class="fa fa-heart like"></i>
+          <a href="#">reply</a>
         </div>
-        <div id="more">
-          <a href="#">more</a>
-        </div>
-        <button id="going-button" class="button">I'm going</button>
-        <h3>Posts</h3>
-        <textarea class="post user-post" rows="4" placeholder="Create a post..."></textarea>
-        <div class="user-post-links">
-          <a href="#">Post</a>
-        </div>
-        <div class="post">
-          Maria F.
-          <p>Can't miss it!</p>
-          <div class="post-links">
-            <i class="fa fa-heart like"></i>
-            <a href="#">reply</a>
-          </div>
-        </div>
-        <div class="post">
-          Sarah A.
-          <p>Looking for a carpool...</p>
-          <div class="post-links">
-            <i class="fa fa-heart like" style="opacity: 0.5;"></i>
-            <a href="#">reply</a>
-          </div>
+      </div>
+      <div class="post">
+        Sarah A.
+        <p>Looking for a carpool...</p>
+        <div class="post-links">
+          <i class="fa fa-heart like" style="opacity: 0.5;"></i>
+          <a href="#">reply</a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
