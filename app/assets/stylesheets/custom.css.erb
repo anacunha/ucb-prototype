@@ -10,7 +10,7 @@ body {
 
 .navbar-default {
   background-color: #bed970;
-  border-color: #dddddc;
+  border-color: #bed970;
 }
 
 .navbar-default .navbar-brand {
@@ -19,75 +19,77 @@ body {
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #000000;
+  color: #255f8a;
 }
 
 .navbar-default .navbar-text {
-  color: #255f8a;
+  color: #000000;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #255f8a;
+  color: #000000;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #000000;
+  color: #255f8a;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #000000;
-  background-color: #dddddc;
+  color: #255f8a;
+  background-color: #bed970;
+  font-weight: 600;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #000000;
-  background-color: #dddddc;
+  color: #255f8a;
+  background-color: #bed970;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #dddddc;
+  border-color: #bed970;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #dddddc;
+  background-color: #bed970;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #255f8a;
+  background-color: #000000;
 }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #255f8a;
+  border-color: #000000;
 }
 
 .navbar-default .navbar-link {
-  color: #255f8a;
+  color: #000000;
 }
 
 .navbar-default .navbar-link:hover {
-  color: #000000;
+  color: #255f8a;
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #255f8a;
+    color: #000000;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #000000;
+    color: #255f8a;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #000000;
-    background-color: #dddddc;
+    color: #255f8a;
+    background-color: #bed970;
+    font-weight: 600;
   }
 }
 
@@ -95,7 +97,7 @@ body {
 /* Logo */
 
 #logo {
-  background: url(<%= asset_path('logo.png') %>) no-repeat left/50%;
+  background: url('/assets/logo.png') no-repeat left/50%;
   font-size: 1.5em;
   font-weight: bold;
   margin-left: .25em;
