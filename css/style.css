@@ -477,17 +477,12 @@ i.fa.fa-heart.like {
   background: buttonface;
 }
 
-#contentArea{
-	width: 100%;
-	font-size: 1em;
-}
-
 .photoMenu{
   display: none;
   text-align: center;
   background: buttonface;
   padding: 7px;
-  font-size: 2em;
+  font-size: 1.2em;
   color: black;
 }
 
