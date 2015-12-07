@@ -1,7 +1,6 @@
 /* GENERAL STUFF */
 
 body {
-  background-color: lightgrey;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
 }
@@ -31,10 +30,10 @@ h3 {
 }
 
 #container {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
 }
 
