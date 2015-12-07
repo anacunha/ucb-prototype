@@ -1,0 +1,18 @@
+<% provide(:title, 'Events') %>
+<h1>Listing Events</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Date</th>
+    <th>Time</th>
+  </tr>
+ 
+  <% @events.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.date.strftime('%A %B %d') %></td>
+    <td><%= event.date.strftime("%I:%M%p") %></td>
+  </tr>
+<% end %>
+</table>
