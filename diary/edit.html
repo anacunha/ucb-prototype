@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>UCB - Edit Entry</title>
 	<meta charset="UTF-8">
 
@@ -43,25 +44,15 @@
 </nav>
 	<!-- The element that encapsulates all other elements on the page -->
 	<div id="container" class="container">
-		<!-- The banner at the top of every page -->
-		<!--<div id="header">
-			<a href="diary.html"><div id="back"><</div></a>
-			<div id="title">Edit Entry</div>
-			<div id="menu"></div>
-			<div id="mainMenu">
-				<a href="../index.html"><div class="mainMenuItem">Home</div></a><hr>
-				<a href=""><div class="mainMenuItem">Check-in</div></a><hr>
-	            <a href="../events/upcoming.html"><div class="mainMenuItem">Events</div></a><hr>
-	            <a href="diary.html"><div class="mainMenuItem">Diary</div></a>
-			</div>
-		</div>-->
 		<div class="editor centered">
-	        <div class="toolbar">
-	            <input type="button" class="toolbarButton boldButton" value="B">
-	            <input type="button" class="toolbarButton italicButton" value="I">
-	            <input type="button" class="toolbarButton underlineButton" value="U">
-	            <img src="images/camera.png" class="cameraButton">
-	        </div>
+	        <table id="toolbar" class="centered">
+				<tr>
+					<td><input type="button" class="toolbarButton boldButton" value="B"></td>
+					<td><input type="button" class="toolbarButton italicButton" value="I"></td>
+					<td><input type="button" class="toolbarButton underlineButton" value="U"></td>
+					<td id="camIconTd"><img src="images/cam.png" class="cameraButton"></td>
+				</tr>
+	        </table>
 	        <div  class="photoMenu"><hr>
 	            <a href=""><div>TAKE A PHOTO</div></a><hr>
 	            <a href=""><div>UPLOAD PHOTO</div></a><hr>

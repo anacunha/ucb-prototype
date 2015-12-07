@@ -42,7 +42,6 @@ h3 {
   color: darkgrey;
 }
 
-
 #header {
   background-color: #BED970;
   border-bottom: 1px solid #000000;
@@ -96,19 +95,6 @@ h3 {
   background: #BED970;
 }
 
-
-
-#mainMenu{
-	display: none;
-	position: relative;
-	top: 100px;
-	background-color: #BED970;
-	z-index: 20;
-	font-size: 3em;
-	text-align: center;
-	padding-bottom: 50px;
-}
-
 /* Buttons */
 
 .button-size{
@@ -126,6 +112,7 @@ h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5em;
   font-weight: 600;
+  color: black;
   height: 2.5em;
   margin-top: 1em;
   outline: 0;
@@ -409,37 +396,15 @@ i.fa.fa-heart.like {
 	font-weight: bold;
 }
 .diaryEvent img{
-	padding-right: 10px;
-	width: 25%;
+	margin-right: 20px;
+	width: 33%;
 	float: left;
 }
 .diaryEvent .text{
-	-webkit-text-size-adjust: none;
-	font-size: 2.5em;
-	text-overflow: ellipses;
-    overflow: hidden;
-}
-.more{
-	font-weight: bold;
 	font-size: 1em;
-	text-decoration: underline;
-	cursor: pointer;
+	text-align: left;
 }
-.button{
-	width: 100%;
-	margin-top: 10px;
-	background-color: #DDDDDC;
-	border: 1px solid grey;
-	font-size: 2.5em;
-	font-weight: bold;
-	text-align: center;
-	cursor: pointer;
-}
-.button:active{
-	position: relative;
-	top: 2px;
-}
-.button:focus {outline:0;}
+
 
 /* EDIT ENTRY STUFF */
 
@@ -456,11 +421,13 @@ i.fa.fa-heart.like {
   margin-top: 50px;
   margin-bottom: 30px;
   border: 1px solid grey;
-  width: 95%;
-
+  width: 100%;
+  background: buttonface;
 }
-.toolbar{
-  padding: 10px 10px 1px 10px;
+#toolbar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90%;
   background: buttonface;
 
 }
@@ -484,18 +451,19 @@ i.fa.fa-heart.like {
 .underlineButton{
   text-decoration: underline;
 }
+#camIconTd{
+  width: 50%;
+}
 .cameraButton{
   cursor: pointer;
   position: relative;
-  top: 10px;
-  margin-left: 39%;
+  height: 50%;
 }
 .content{
   background: buttonface;
-  padding: 7px;
 }
 #contentArea{
-	width: 95%;
+	width: 100%;
 	font-size: 2em;
 }
 .photoMenu{
