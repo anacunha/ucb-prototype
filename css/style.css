@@ -590,3 +590,25 @@ i.fa.fa-heart.like {
   margin-left: .25em;
   padding-left: .75em;
 }
+
+
+/* Home */
+
+.center-block {
+  float: none !important
+}
+
+.home-option {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.button-text {
+  display: inline-block;
+  padding-top: 2em;
+}
+
+.button-logo {
+  float: left;
+}
