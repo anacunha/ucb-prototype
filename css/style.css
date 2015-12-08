@@ -514,6 +514,15 @@ i.fa.fa-heart.like {
   font-size: 1.5em;
 }
 
+#profile-view #profile-name {
+  margin-top: 1em;
+}
+
+#profile-view .profile-info {
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+
 #profile-edit {
   background-color: #FFFFFF;
   border-bottom: 1px solid #000000;
