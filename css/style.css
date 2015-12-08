@@ -511,6 +511,7 @@ i.fa.fa-heart.like {
 }
 
 #profile-view {
+  border-bottom: 1px solid #DDDDDC;
   font-size: 1.5em;
 }
 
@@ -519,8 +520,9 @@ i.fa.fa-heart.like {
 }
 
 #profile-view .profile-info {
+  border-top: 1px solid #DDDDDC;
   font-weight: 400;
-  margin-bottom: .5em;
+  padding: .5em 0;
 }
 
 #profile-edit {
