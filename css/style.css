@@ -501,7 +501,7 @@ i.fa.fa-heart.like {
 
 #profile-view {
   background-color: #FFFFFF;
-  border: 1px solid #000000;
+  /*  border: 1px solid #000000;*/
   clear: both;
   text-align: center;
 }
@@ -532,6 +532,10 @@ i.fa.fa-heart.like {
   float: left;
   height: 100%;
   width: 50%;
+}
+
+#tabs a {
+  color: #000000;
 }
 
 
