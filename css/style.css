@@ -167,6 +167,16 @@ h3 {
 
 /* EVENTS STUFF */
 
+#filterDropdown{
+	margin-bottom: 20px;
+
+}
+
+#filterDropdown ul{
+	width: 100%;
+	text-align: center;
+}
+
 #tabs {
   height: 50px;
   font-size: 1.5em;

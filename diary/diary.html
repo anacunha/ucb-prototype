@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UCB - My Diary</title>
+	<meta charset="UTF-8">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,400italic,300italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css"/>
+	<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default" id="header">
+	<div class="container-fluid">
+		<div class="navbar-header" id="logo">
+			<a class="navbar-brand" href="../index.html"><img src="../images/logo.png"></a>
+		</div>
+		<div id="title">My Diary</div>
+		<div>
+			<ul class="nav navbar-nav" id="menu">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown"><b>&#9776;</b></a>
+					<ul class="dropdown-menu">
+						<li><a href="../index.html"><i class="fa fa-home">&nbsp;<span>Home</span></i></a></li>
+						<li><a href="#"><i class="fa fa-user">&nbsp;<span>My Profile</span></i></a></li>
+						<li><a href="#"><i class="fa fa-check-square-o">&nbsp;<span>Check-In</span></i></a></li>
+						<li><a href="#"><i class="fa fa-star">&nbsp;<span>UCB Points</span></i></a></li>
+						<li><a href="../events/upcoming.html"><i class="fa fa-calendar">&nbsp;<span>Events</span></i></a></li>
+						<li  class="active"><a href="#"><i class="fa fa-pencil-square-o">&nbsp;<span>Diary</span></i></a></li>
+						<li><a href="#"><i class="fa fa-question">&nbsp;<span>Help</span></i></a></li>
+						<li><a href="#"><i class="fa fa-question-circle">&nbsp;<span>About UCB</span></i></a></li>
+						<li><a href="#"><i class="fa fa-sign-out">&nbsp;<span>Logout</span></i></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	<!-- The element that encapsulates all other elements on the page -->
+	<div id="container" class="container">
+		<!-- Event elements in the Diary -->
+		<div id="diaryEvents">
+			<div class="diaryEvent">
+				<p class="title">Community Partners</p>
+				<p class="text"><img src="images/1.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a href="edit.html"><button type="button" class="button">Edit Entry</button></a>
+			</div>
+			<div class="diaryEvent">
+				<p class="title">Family Van</p>
+				<p class="text" style="color: grey;"><img src="images/empty.png">Create an entry for this event ...</p>
+				<a href="edit.html"><button type="button" class="button">Create Entry</button></a>
+			</div>
+			<div class="diaryEvent">
+				<p class="title">Planning for Success</p>
+				<p class="text"><img src="images/3.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a href="edit.html"><button type="button" class="button">Edit Entry</button></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
