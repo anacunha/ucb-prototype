@@ -499,10 +499,18 @@ i.fa.fa-heart.like {
   text-align: left;
 }
 
-#profile-content {
+#profile-view {
   background-color: #FFFFFF;
-  border-right: 1px solid #000000;
+  border: 1px solid #000000;
+  clear: both;
+  text-align: center;
+}
+
+#profile-edit {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #000000;
   border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
   clear: both;
   text-align: center;
 }
