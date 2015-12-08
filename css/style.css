@@ -542,6 +542,28 @@ i.fa.fa-heart.like {
   color: #000000;
 }
 
+#profile-name {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+#profile-picture {
+  margin-bottom: 1.5em;
+}
+
+#profile-picture img {
+  border: 1px solid #979797;
+  margin-bottom: .25em;
+}
+
+#profile-edit label {
+  font-size: 1.5em;
+}
+
+#profile-edit button {
+  height: 3em;
+}
+
 
 /* Header */
 
