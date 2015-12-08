@@ -285,15 +285,15 @@ h3 {
 
 .attendee {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .placeholder {
   background-color: #DDDDDC;
-  height: 70px;
+  height: 45px;
   margin: auto;
   margin-bottom: .5em;
-  width: 70px;
+  width: 45px;
 }
 
 #more {
