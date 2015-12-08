@@ -658,7 +658,7 @@ i.fa.fa-heart.like {
 
 /* Help */
 
-.faq-title {
+.title {
   margin-top: 1em;
   margin-bottom: 1.5em;
 }
@@ -674,4 +674,12 @@ i.fa.fa-heart.like {
 
 .faq {
   padding-bottom: .75em;
+}
+
+
+/* About */
+
+.about-text {
+  color: #5CC0DE;
+  font-size: 1.2em;
 }
