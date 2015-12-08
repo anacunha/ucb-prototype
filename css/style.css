@@ -498,6 +498,32 @@ i.fa.fa-heart.like {
   text-align: left;
 }
 
+#profile-content{
+  text-align: center;
+  background-color: #FFFFFF;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  clear: both;
+}
+
+#contact {
+  background-color: #FFFFFF;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #DDDDDC;
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+
+#personal {
+  background-color: #DDDDDC;
+  border-bottom: 1px solid #000000;
+  float: left;
+  height: 100%;
+  width: 50%;
+}
 
 /* Header */
 
