@@ -671,3 +671,7 @@ i.fa.fa-heart.like {
 .answer p {
   margin-bottom: 0;
 }
+
+.faq {
+  padding-bottom: .75em;
+}
