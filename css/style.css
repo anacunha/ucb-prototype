@@ -206,6 +206,7 @@ h3 {
 
 #events {
   background-color: #FFFFFF;
+  border-bottom: 1px solid #000000;
   border-right: 1px solid #000000;
   border-left: 1px solid #000000;
   clear: both;
@@ -499,11 +500,11 @@ i.fa.fa-heart.like {
 }
 
 #profile-content {
-  text-align: center;
   background-color: #FFFFFF;
   border-right: 1px solid #000000;
   border-left: 1px solid #000000;
   clear: both;
+  text-align: center;
 }
 
 #contact {
