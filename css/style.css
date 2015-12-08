@@ -16,10 +16,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
-}
-
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -657,4 +653,21 @@ i.fa.fa-heart.like {
 
 .button-logo {
   float: left;
+}
+
+
+/* Help */
+
+.faq-title {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.answer {
+  display: none;
+  margin-top: .5em;
+}
+
+.answer p {
+  margin-bottom: 0;
 }
