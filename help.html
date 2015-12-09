@@ -12,6 +12,38 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" />
   <link href="css/style.css" rel="stylesheet">
+  
+  <script>
+				$(document).ready(function(){
+						$("[id='question1']").click(function(){
+							$("div[id='answer1']").toggle();
+						});
+						$("[id='question2']").click(function(){
+							$("div[id='answer2']").toggle();
+						});
+						$("[id='question3']").click(function(){	
+							$("div[id='answer3']").toggle();
+						});
+						$("[id='question4']").click(function(){
+							$("div[id='answer4']").toggle();
+						});
+						$("[id='question5']").click(function(){
+							$("div[id='answer5']").toggle();
+						});
+						$("[id='question6']").click(function(){	
+							$("div[id='answer6']").toggle();
+						});
+						$("[id='question7']").click(function(){
+							$("div[id='answer7']").toggle();
+						});
+						$("[id='question8']").click(function(){
+							$("div[id='answer8']").toggle();
+						});
+						$("[id='question9']").click(function(){	
+							$("div[id='answer9']").toggle();
+						});
+					});
+		</script>
 </head>
 
 <body>
@@ -61,34 +93,24 @@
     <!-- /.container-fluid -->
   </nav>
 
-  <script Type="text/javascript">
-    function showhide(element) {
-      if (document.getElementById(element).style.display == 'block') {
-        document.getElementById(element).style.display = 'none';
-      } else {
-        document.getElementById(element).style.display = 'block';
-      }
-    }
-  </script>
-
   <div id="container" class="container">
     <!-- Events FAQ -->
     <div class="faq">
       <h4 class="section-title">Events FAQ</h4>
 
       <!-- Question 1 -->
-      <a id="question1" href="#question1" onclick="showhide('answer1');">
+      <p id="question1" class="question">
         1) How to see upcoming/past events?
-      </a>
+      </p>
       <div id="answer1" class="answer">
         <p>Click on <em>"Events"</em> and you will be taken to a page where you can see upcoming and past events.</p>
       </div>
       <hr/>
 
       <!-- Question 2 -->
-      <a id="question2" href="#question2" onclick="showhide('answer2');">
+      <p id="question2" class="question">
         2) How to find an event's location?
-      </a>
+      </p>
       <div id="answer2" class="answer">
         <p>- Click on <em>"Events"</em> and you will be taken to a page where you can see upcoming and past events.</p>
         <p>- Click on the event you are interested in, this will take you to that event's page which has a map showing its location.</p>
@@ -96,9 +118,9 @@
       <hr/>
 
       <!-- Question 3 -->
-      <a id="question3" href="#question3" onclick="showhide('answer3');">
+      <p id="question3" class="question">
         3) How to know the agenda of an event?
-      </a>
+      </p>
       <div id="answer3" class="answer">
         <p>- Click on <em>"Events"</em> and you will be taken to a page where you can see upcoming and past events.</p>
         <p>- Click on the event you are interested in, this will take you to that event's page which has the event's agenda written on top.</p>
@@ -106,9 +128,9 @@
       <hr/>
 
       <!-- Question 4 -->
-      <a id="question4" href="#question4" onclick="showhide('answer4');">
+      <p id="question4" class="question">
         4) How to know who's going/went to a particular event?
-      </a>
+      </p>
       <div id="answer4" class="answer">
         <p>- Click on <em>"Events"</em> and you will be taken to a page where you can see upcoming and past events.</p>
         <p>- Click on the event you are interested in, this will take you to that event's page which shows the event's attendees under the <em>"Who is going"</em> section.</p>
@@ -116,9 +138,9 @@
       <hr/>
 
       <!-- Question 5 -->
-      <a id="question5" href="#question5" onclick="showhide('answer5');">
+      <p id="question5" class="question">
         5) How to let others know that you are going to a particular event? 
-      </a>
+      </p>
       <div id="answer5" class="answer">
         <p>- Click on <em>"Events"</em> and you will be taken to a page where you can see upcoming and past events.</p>
         <p>- Click on the event you are interested in, this will take you to that event's page where you can RSVP to the event by clicking on the "I am going" button located below the list of attendees.</p>
@@ -126,9 +148,9 @@
       <hr/>
 
       <!-- Question 6 -->
-      <a id="question6" href="#question6" onclick="showhide('answer6');">
+      <p id="question6" class="question">
         6) How to create or reply to a post? 
-      </a>
+      </p>
       <div id="answer6" class="answer">
         <p>- Click on <em>"Events"</em> and you will be taken to a page where you can see upcoming and past events.</p>
         <p>- Click on the event you are interested in, this will take you to that event's page.</p>
@@ -142,9 +164,9 @@
       <h4 class="section-title">My Diary / Profile FAQ</h4>
 
       <!-- Question 7 -->
-      <a id="question7" href="#question7" onclick="showhide('answer7');">
+      <p id="question7" class="question">
         1) How to add/edit a diary entry?
-      </a>
+      </p>
       <div id="answer7" class="answer">
         <p>- Click on <em>"My Diary"</em>.</p>
         <p>- Choose the event you would like to create an entry for from the list of the events you have attended.</p>
@@ -153,9 +175,9 @@
       <hr/>
 
       <!-- Question 8 -->
-      <a id="question8" href="#question8" onclick="showhide('answer8');">
+      <p id="question8" class="question">
         2) How to upload picture to diary entry?
-      </a>
+      </p>
       <div id="answer8" class="answer">
         <p>- Click on <em>"My Diary"</em>.</p>
         <p>- Choose the event you would like to upload a picture for and click on <em>"Create Entry"</em> or <em>"Edit Entry"</em>.</p>
@@ -164,9 +186,9 @@
       <hr/>
 
       <!-- Question 9 -->
-      <a id="question9" href="#question9" onclick="showhide('answer9');">
+      <p id="question9" class="question">
         3) How to update my personal/contact information?
-      </a>
+      </p>
       <div id="answer9" class="answer">
         <p>1) Click on the dropdown menu on the right top section of the header.</p>
         <p>2) Select <em>"Edit Profile"</em> from the list of options.</p>
