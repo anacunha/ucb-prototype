@@ -247,6 +247,13 @@ h3 {
   margin-top: -20px;
 }
 
+#event-points {
+  font-size: 1.25em;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+
 #event-date {
   font-size: 1.25em;
   font-weight: 300;
@@ -259,7 +266,7 @@ h3 {
   color: #5CC0DE;
   font-size: 1.25em;
   text-align: center;
-  margin-bottom: .75em;
+  margin-bottom: .25em;
 }
 
 #event-container {
@@ -489,7 +496,7 @@ i.fa.fa-heart.like {
 
 #saveButton {
   padding-bottom: 50px;
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -650,6 +657,14 @@ i.fa.fa-heart.like {
   color: #255f8a;
 }
 
+.divHeader{
+  display: none;
+  padding-top: 15px;
+  padding-left: 80px;
+  font-weight: bold;
+  font-size: large;
+}
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #000000;
@@ -664,6 +679,10 @@ i.fa.fa-heart.like {
     color: #255f8a;
     background-color: #bed970;
     font-weight: 600;
+  }
+
+  .divHeader{
+    display: inline-block;
   }
 }
 
