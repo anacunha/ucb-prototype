@@ -26,7 +26,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #5CC0DE;
   text-decoration: none;
 }
 
@@ -224,6 +224,10 @@ a:hover {
   text-align: center;
 }
 
+.tabs a {
+  color: #000000;
+}
+
 .right-tab-selected {
   background-color: #FFFFFF;
   border-right: 1px solid #000000;
@@ -319,6 +323,10 @@ a:hover {
   clear: both;
 }
 
+#events a {
+  color: #000000;
+}
+
 .event {
   align-items: center;
   border-bottom: 1px solid #DDDDDC;
@@ -342,4 +350,224 @@ a:hover {
   font-size: 1em;
   font-weight: 300;
   width: 30%;
+}
+
+
+/* Event */
+
+#event-tab {
+  border-bottom: 1px solid #000000;
+  height: 100px;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 100px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+#event-date {
+  font-size: 1.25em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+#event-points {
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-bottom: .25em;
+  text-align: center;
+}
+
+#event-category {
+  color: #5CC0DE;
+  font-size: 1.25em;
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+
+#event-container {
+  padding: 0 1em 1em 1em;
+}
+
+#event-info {
+  padding: 0 1em;
+  text-align: left;
+}
+
+#event-location {
+  margin-top: 2em;
+}
+
+#event-location p {
+  padding: 0 1em;
+  text-align: left;
+}
+
+.map {
+  border: 1px solid #979797;
+  display: block;
+  height: auto;
+  margin: 2em auto 2em auto;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 90%;
+}
+
+#attendees {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.attendee {
+  text-align: center;
+  font-size: 1em;
+}
+
+.placeholder {
+  background-color: #DDDDDC;
+  height: 45px;
+  margin: auto;
+  margin-bottom: .5em;
+  width: 45px;
+}
+
+#more {
+  clear: both;
+  float: right;
+  padding-top: .75em;
+  padding-right: 1em;
+}
+
+.btn-rsvp {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.btn-going {
+  background-color: #5CC0DE;
+  color: #FFFFFF;
+}
+
+.btn-going:hover {
+  background-color: #DDDDDC;
+  border: 1px solid #000000;
+}
+
+.btn-not-going {
+  background-color: #DDDDDC;
+  border: 1px solid #000000;
+}
+
+.btn-not-going:hover {
+  background-color: #5CC0DE;
+  color: #FFFFFF;
+}
+
+.post {
+  border: 1px solid #DDDDDC;
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.post p {
+  color: #979797;
+}
+
+i.fa.fa-heart.like {
+  color: #F26D61;
+  font-size: 0.8em;
+  padding-right: .5em;
+}
+
+.post-links {
+  text-align: right;
+}
+
+.user-post {
+  color: #979797;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  margin-top: 0;
+  resize: none;
+  width: 100%;
+}
+
+.reply {
+  cursor: pointer;
+}
+
+
+/* User Post placeholder text color */
+
+.user-post::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #DDDDDC;
+}
+
+.user-post:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #DDDDDC;
+  opacity: 1;
+}
+
+.user-post::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #DDDDDC;
+  opacity: 1;
+}
+
+.user-post:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #DDDDDC;
+}
+
+.user-post-links {
+  height: auto;
+  margin-bottom: 1.5em;
+  text-align: right;
+  cursor: pointer;
+}
+
+.user-post-links a {
+  /* background-color: #5CC0DE; */
+  background-color: #FFFFFF;
+  border: 1px solid #979797;
+  color: #000000;
+  padding: 0.25em 1.25em;
+}
+
+.user-post-links a:hover {
+  /* background-color: #FFFFFF; */
+  background-color: #5CC0DE;
+}
+
+
+/* Help */
+
+.section-title {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.answer {
+  display: none;
+  margin-top: .5em;
+}
+
+.answer p {
+  margin-bottom: 0;
+}
+
+.question {
+  color: #5CC0DE;
+}
+
+.faq {
+  padding-bottom: .75em;
 }

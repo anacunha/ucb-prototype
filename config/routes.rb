@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   
   # Events
   resources :events
+  post 'events/:id/rsvp'    => 'events#rsvp'
 end

@@ -1,2 +1,117 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<% provide(:title, @event.name) %>
+
+<div class="row">
+  <div id="event-tab">
+    <%= @event.name %>
+  </div>
+  <div id="event-date">
+    <%= @event.date.strftime('%A, %B %d - %I:%M %p') %>
+  </div>
+  <div id="event-points">
+    (<%= @event.points %> pts)
+  </div>
+  <div id="event-category">
+    <%=link_to @event.category.name, events_path(category: @event.category.id) %>
+  </div>
+  <div id="event-container">
+    <p id="event-info"><%= @event.description %></p>
+    <div id="event-location">
+      <h3>Location</h3>
+      <p><em><%= @event.location %></em></p>
+      <iframe
+        width="100%"
+        height="300"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAI-5poQz6PbunOcFob_YEFkGInXhaCfkg
+             &q= <%= @event.location %>" allowfullscreen>
+      </iframe>
+    </div>
+    <h3>
+      <% if @past %>
+        Who went?
+      <% else %>
+        Who is going?
+      <% end %>
+    </h3>
+    <div id="attendees">
+      <div class="attendee">
+        <div class="placeholder"></div>
+        Ana
+      </div>
+      <div class="attendee">
+        <div class="placeholder"></div>
+        Lily
+      </div>
+      <div class="attendee">
+        <div class="placeholder"></div>
+        Stefan
+      </div>
+      <div class="attendee">
+        <div class="placeholder"></div>
+        Harshil
+      </div>
+      <div class="attendee">
+        <div class="placeholder"></div>
+        Harshil
+      </div>
+      <div class="attendee">
+        <div class="placeholder"></div>Hannah
+      </div>
+    </div>
+    <div id="more">
+      <a href="#">more</a>
+    </div>
+    
+    <% if @rsvp %>
+      <%= button_to "I'm going", event_path(@event) + '/rsvp', class: "btn btn-default btn-rsvp btn-going" , method: :post %>
+    <% else %>
+      <%= button_to "Are you going?", event_path(@event) + '/rsvp', class: "btn btn-default btn-rsvp btn-not-going" , method: :post %>
+    <% end %>
+    
+    <h3>Posts</h3>
+    <textarea class="post user-post" rows="4" placeholder="Create a post..."></textarea>
+    <div class="user-post-links">
+      <a href="#">Post</a>
+    </div>
+
+    <div class="post">
+      Maria F.
+      <p>Can't miss it!</p>
+      <div class="post-links">
+        <div class="reply" id="reply1"><a>reply</a></div>
+      </div>
+      <div class="replyPanel" id="panel1" style="display:none;">
+        <p>Valentina</p>
+        <textarea rows="1"  placeholder="Write a reply..."></textarea>
+        <div class="user-post-links">
+            <a>Send</a>
+        </div>
+      </div>
+    </div>
+     <div class="user-post-links">
+      <a href="#">Report</a>
+    </div>
+
+    <div class="post">
+      Sarah A.
+      <p>Looking for a carpool...</p>
+      <div class="post-links">
+        <div class="reply" id="reply2"><a>reply</a></div>
+      </div>
+      <div class="replyPanel" id="panel2" style="display:none;">
+        <p>Valentina</p>
+        <textarea rows="1"  placeholder="Write a reply..."></textarea>
+        <div class="user-post-links">
+            <a>Send</a>
+        </div>
+      </div>
+    </div>
+     <div class="user-post-links">
+      <a href="#">Report</a>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+
+</html>

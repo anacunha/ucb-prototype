@@ -33,8 +33,9 @@ ActiveRecord::Schema.define(version: 20151210172943) do
   add_index "events", ["category_id"], name: "index_events_on_category_id"
 
   create_table "events_users", id: false, force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "event_id"
+    t.integer "user_id",     null: false
+    t.integer "event_id",    null: false
+    t.text    "diary_entry"
   end
 
   add_index "events_users", ["event_id", "user_id"], name: "index_events_users_on_event_id_and_user_id"
