@@ -27,9 +27,9 @@
       <% end %>
     <% end %>
   </div>
-  <div id="events">
+  <div id="events" class="container">
     <% @events.each do |event| %>
-      <div class="event <%= event.category.id %>">
+      <div class="row event <%= event.category.id %>">
         <span class="title"><%= link_to event.name, event_path(event) %></span>
         <span class="date"><%= event.date.strftime('%m/%d - %I:%M %p') %></span>
       </div>
