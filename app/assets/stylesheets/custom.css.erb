@@ -22,7 +22,18 @@ $state-danger-text: #a94442;
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5CC0DE;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 
@@ -271,4 +282,63 @@ body {
 #profile-edit input[type=submit]:hover {
   color: #FFFFFF;
   background-color: #5CC0DE;
+}
+
+
+/* Events */
+
+#filterDropdown {
+  margin-bottom: 20px;
+}
+
+#filterDropdown ul {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  background-color: #DDDDDC;
+  /* background-color: #5CC0DE; */
+  border: 1px solid #979797;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+  height: 1.7em;
+  margin-top: 1em;
+  outline: 0;
+  width: 100%;
+}
+
+#events {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  clear: both;
+}
+
+.event {
+  border-bottom: 1px solid #DDDDDC;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.event:hover {
+  background-color: #DDDDDC;
+}
+
+.event .title {
+  float: left;
+  font-size: 1.2em;
+  width: 70%;
+}
+
+.event .date {
+  float: right;
+  font-size: 1.2em;
+  font-weight: 300;
+  width: 30%;
 }

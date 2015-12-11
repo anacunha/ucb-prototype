@@ -1,18 +1,40 @@
 <% provide(:title, 'Events') %>
-<h1>Listing Events</h1>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Date</th>
-    <th>Time</th>
-  </tr>
- 
-  <% @events.each do |event| %>
-  <tr>
-    <td><%= event.name %></td>
-    <td><%= event.date.strftime('%A %B %d') %></td>
-    <td><%= event.date.strftime("%I:%M%p") %></td>
-  </tr>
-<% end %>
-</table>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div id="filterDropdown" class="dropdown">
+      <button id="filterButton" class="button dropdown-toggle" type="button" data-toggle="dropdown">
+        Filter: <span id="filterType">None</span><span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#" id="none" class="filterChoice">None</a></li>
+        <% Category.all.each do |category| %>
+          <li><a href="#" id="<%= category.id %>" class="filterChoice"><%= category.name %></a></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="tabs">
+      <%= link_to events_path, method: :get do %>
+        <% if @past %>
+          <div class="right-tab-unselected">Upcoming</div>
+        <% else %>
+          <div class="right-tab-selected">Upcoming</div>
+        <% end %>
+      <% end %>
+      <%= link_to events_path(past: true), method: :get do %>
+        <% if @past %>
+          <div class="left-tab-selected">Past</div>
+        <% else %>
+          <div class="left-tab-unselected">Past</div>
+        <% end %>
+      <% end %>
+    </div>
+    <div id="events">
+      <% @events.each do |event| %>
+        <div class="event <%= event.category.id %>">
+          <span class="title"><%= link_to event.name, event_path(event) %></span>
+          <span class="date"><%= event.date.strftime('%m/%d - %I:%M %p') %></span>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

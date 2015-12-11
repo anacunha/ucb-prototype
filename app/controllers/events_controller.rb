@@ -1,6 +1,13 @@
+require 'date'
+
 class EventsController < ApplicationController
   def index
-    @events = Event.all
+    @past = params[:past] == 'true'
+    if @past
+      @events = Event.where('date < ?', Date.today)
+    else
+      @events = Event.where('date >= ?', Date.today)
+    end
   end
 
   def show
