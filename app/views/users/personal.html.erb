@@ -1,0 +1,57 @@
+<% provide(:title, "Edit Personal Info") %>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="tabs">
+      <a href="#">
+        <div class="right-tab-selected"><i class="fa fa-user">&nbsp;</i><span>Personal Info</span></div>
+      </a>
+      <a href="<%= '/users/' + current_user.id.to_s + '/contact' %>">
+        <div class="left-tab-unselected"><i class="fa fa-phone-square">&nbsp;</i><span>Contact Info</span></div>
+      </a>
+    </div>
+    <div id="profile-edit">
+      <%= form_for(@user, html: { class: 'form-horizontal' }) do |f| %>
+        <%= render 'shared/error_messages' %>
+      
+        <div class="form-group">
+          <%= f.label :name, class: 'control-label' %>
+          <%= f.text_field :name, class: 'form-control', placeholder: 'Full Name' %>
+        </div>
+      
+        <div class="form-group">
+          <%= f.label :gender, class: 'control-label' %>
+          <%= f.select(:gender, [['Female', 'female'], ['Male', 'male']], {include_blank: '-'}, {:class => "form-control",}) %>
+        </div>
+      
+        <div class="form-group">
+          <%= f.label :partner_organization, class: 'control-label' %>
+          <%= f.text_field :partner_organization, class: 'form-control', placeholder: 'Partner Organization' %>
+        </div>
+      
+        <div class="form-group">
+          <%= f.label :neighborhood, class: 'control-label' %>
+          <%= f.text_field :neighborhood, class: 'form-control', placeholder: 'Neighborhood' %>
+        </div>
+      
+        <div class="form-group">
+          <%= f.label :workplace, class: 'control-label' %>
+          <%= f.text_field :workplace, class: 'form-control', placeholder: 'Workplace' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :password, class: 'control-label' %>
+          <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :password_confirmation, "Password Confirmation", class: 'control-label' %>
+          <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Password Confirmation' %>
+        </div>
+        
+        <div class="form-group">
+          <%= f.submit "Save", class: "btn btn-default" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

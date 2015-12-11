@@ -7,7 +7,7 @@ $state-danger-text: #a94442;
 }
 
 
-/* miscellaneous */
+/* Miscellaneous */
 
 .debug_dump {
   clear: both;
@@ -167,7 +167,8 @@ body {
 
 /* Signup Form */
 
-#signup-form h1 {
+#signup-form h2 {
+  font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -175,7 +176,79 @@ body {
 
 /* Login Form */
 
-#login-form h1 {
+#login-form h2 {
+  font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
+}
+
+
+/* Tabs */
+
+.tabs {
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+}
+
+.right-tab-selected {
+  background-color: #FFFFFF;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #DDDDDC;
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.right-tab-unselected {
+  background-color: #DDDDDC;
+  border-bottom: 1px solid #000000;
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.left-tab-selected {
+  background-color: #FFFFFF;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #DDDDDC;
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+
+.left-tab-unselected {
+  background-color: #DDDDDC;
+  border-bottom: 1px solid #000000;
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+
+
+/* Profile Edit */
+
+#profile-edit {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+#profile-edit input[type=submit] {
+  background-color: #DDDDDC;
+  width: 100%;
+}
+
+#profile-edit input[type=submit]:hover {
+  color: #FFFFFF;
+  background-color: #5CC0DE;
 }

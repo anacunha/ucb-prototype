@@ -26,14 +26,14 @@
           <% if logged_in? %>
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user fa-fw"></i>&nbsp; 
-            <%= @current_user.name %>
+            <%= @current_user.name.split.first %>
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
             <li><a href="#"><strong>575 Points</strong></a></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to 'View Profile', current_user %></li>
-            <li><a href="#">Edit Profile</a></li>
+            <li><%= link_to 'Edit Profile', '/users/' + current_user.id.to_s + '/personal' %></li>
             <li role="separator" class="divider"></li>
             <li>
               <%= link_to 'Sign out', logout_path, method: "delete" %>

@@ -1,0 +1,52 @@
+<% provide(:title, "Edit Contact Info") %>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="tabs">
+      <a href="<%= '/users/' + current_user.id.to_s + '/personal' %>">
+        <div class="right-tab-unselected"><i class="fa fa-user">&nbsp;</i><span>Personal Info</span></div>
+      </a>
+      <a href="#">
+        <div class="left-tab-selected"><i class="fa fa-phone-square">&nbsp;</i><span>Contact Info</span></div>
+      </a>
+    </div>
+    <div id="profile-edit">
+      <%= form_for(@user, html: { class: 'form-horizontal' }) do |f| %>
+        <%= render 'shared/error_messages' %>
+      
+        <div class="form-group">
+          <%= f.label :email, class: 'control-label' %>
+          <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
+        </div>
+      
+        <div class="form-group">
+          <%= f.label :phone, class: 'control-label' %>
+          <%= f.number_field :phone, class: 'form-control', placeholder: 'Phone Number' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :address, class: 'control-label' %>
+          <%= f.text_field :address, class: 'form-control', placeholder: 'Address' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :city, class: 'control-label' %>
+          <%= f.text_field :city, class: 'form-control', placeholder: 'City' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :state, class: 'control-label' %>
+          <%= f.text_field :state, class: 'form-control', placeholder: 'State' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :zip_code, class: 'control-label' %>
+          <%= f.number_field :zip_code, class: 'form-control', placeholder: 'Zip Code' %>
+        </div>
+        
+        <div class="form-group">
+          <%= f.submit "Save", class: "btn btn-default" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

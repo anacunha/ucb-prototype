@@ -1,7 +1,7 @@
 <% provide(:title, 'Sign up') %>
 
 <div class="row" id="signup-form">
-  <h1>Sign up</h1>
+  <h2>Sign up</h2>
   <div class="col-md-8 col-md-offset-2">
     <%= form_for(@user, html: { class: 'form-horizontal' }) do |f| %>
       <%= render 'shared/error_messages' %>
@@ -21,9 +21,9 @@
     </div>
     
     <div class="form-group">
-      <%= f.label :partner_organization, class: 'col-sm-3 control-label' %>
+      <%= f.label :partner_organization, "Partner Organization", class: 'col-sm-3 control-label' %>
       <div class="col-sm-9">
-        <%= f.text_field :partner_organization, class: 'form-control', placeholder: 'Email' %>
+        <%= f.text_field :partner_organization, class: 'form-control', placeholder: 'Partner Organization' %>
       </div>
     </div>
     
@@ -91,7 +91,7 @@
     </div>
     
     <div class="form-group">
-      <%= f.label :password_confirmation, class: 'col-sm-3 control-label' %>
+      <%= f.label :password_confirmation, "Confirmation", class: 'col-sm-3 control-label' %>
       <div class="col-sm-9">
         <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Password Confirmation' %>
       </div>
