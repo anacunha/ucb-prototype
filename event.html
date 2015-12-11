@@ -12,6 +12,19 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" />
   <link href="css/style.css" rel="stylesheet">
+  
+  <script> 
+	$(document).ready(function(){
+		$("#reply1").click(function(){
+			$("#panel1").slideDown(500);
+		});
+		
+		$("#reply2").click(function(){
+			$("#panel2").slideDown(500);
+		});
+	});
+</script>
+
 </head>
 
 <body>
@@ -111,22 +124,37 @@
         <div class="user-post-links">
           <a href="#">Post</a>
         </div>
+		
         <div class="post">
           Maria F.
           <p>Can't miss it!</p>
           <div class="post-links">
-            <i class="fa fa-heart like"></i>
-            <a href="#">reply</a>
+			<div id="reply1"><a>reply</a></div>
           </div>
+		  <div id="panel1" style="display:none;">
+		  Valentina</p>
+			<textarea rows="1" cols="75" placeholder="Write a reply..."></textarea>
+		</div>
         </div>
+		 <div class="user-post-links">
+          <a href="#">Report</a>
+        </div>
+		
         <div class="post">
           Sarah A.
           <p>Looking for a carpool...</p>
           <div class="post-links">
-            <i class="fa fa-heart like" style="opacity: 0.5;"></i>
-            <a href="#">reply</a>
+			<div id="reply2"><a>reply</a></div>
           </div>
+		  <div id="panel2" style="display:none;">
+		  Valentina</p>
+			<textarea rows="1" cols="75" placeholder="Write a reply..."></textarea>
+		</div>
         </div>
+		 <div class="user-post-links">
+          <a href="#">Report</a>
+        </div>
+		
       </div>
     </div>
   </div>
