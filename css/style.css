@@ -278,6 +278,12 @@ h3 {
   text-align: left;
 }
 
+#event-location{
+	padding: 0 1em;
+	text-align: left;
+	font-weight: bold;
+}
+
 .map {
   border: 1px solid #979797;
   display: block;
@@ -344,6 +350,10 @@ i.fa.fa-heart.like {
   width: 100%;
 }
 
+.reply{
+	cursor: pointer;
+	
+}
 
 /* User Post placeholder text color */
 
@@ -373,6 +383,7 @@ i.fa.fa-heart.like {
   height: auto;
   margin-bottom: 1.5em;
   text-align: right;
+  cursor: pointer;
 }
 
 .user-post-links a {
