@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="<%= 'active' if params[:controller] == 'events' %>"><a href="#">Events</a></li>
+        <li class="<%= 'active' if params[:controller] == 'events' %>"><%= link_to 'Events', events_path %></li>
         <li class=""><a href="#">Check In</a></li>
         <li class=""><a href="#">My Diary</a></li>
         <li class="<%= 'active' if current_page?(help_path) %>"><%= link_to 'Help', help_path %></li>

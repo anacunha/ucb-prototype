@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   get 'users/:id/personal'  => 'users#personal'
   get 'users/:id/contact'   => 'users#contact'
   
-  get 'events/index'
-  get 'events/show'
+  # Events
+  resources :events
 end

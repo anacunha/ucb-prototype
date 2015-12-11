@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  skip_before_filter :require_login, only: [:about, :help]
+  
   def home
   end
 
@@ -6,8 +8,5 @@ class StaticPagesController < ApplicationController
   end
 
   def about
-  end
-  
-  def events
   end
 end
