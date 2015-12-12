@@ -23,6 +23,17 @@ $( window ).load(function() {
 		$("#contentArea").html(thisChoice);
 	});
 	
+	
+	
+
+});
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
+$(document).ready(function(){
 	$(".filterChoice").click(function(){
 		var filter = $(this).attr("id");
 		var filterClass = ".".concat(filter);
@@ -48,15 +59,6 @@ $( window ).load(function() {
 		}
 	});
 	
-
-});
-
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-
-$(document).ready(function(){
 	$(".reply").click(function(){
 		$(this).parents(".post").find(".replyPanel").slideDown(500);
 	});
