@@ -1,7 +1,7 @@
 class DiariesController < ApplicationController
   
   def index
-    @diaries = Diary.where('user_id == ?', current_user.id)
+    @diaries = Diary.where('user_id = ?', current_user.id)
     @events = current_user.events
   end
   
