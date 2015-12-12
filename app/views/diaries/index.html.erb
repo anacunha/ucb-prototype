@@ -1,0 +1,24 @@
+<div id="diaryEvents">
+  <% @events.each do |event| %>
+    <div class="diaryEvent">
+      <p class="title"><%= event.name %></p>
+      <% if @diaries.find_by('event_id == ?', event.id).nil? %>
+        <p class="text">
+          <img src="<%= asset_path('empty.png') %>">
+          Create an entry for this event...
+        </p>
+        <a href="edit-diary.html">
+          <button type="button" class="button">Create Entry</button>
+        </a>
+      <% else %>
+        <p class="text">
+          <img src="<%= asset_path('diary.png') %>">
+          <%= diary.entry %>
+        </p>
+        <a href="edit-diary.html">
+          <button type="button" class="button">Edit Entry</button>
+        </a>
+      <% end %>   
+    </div>
+  <% end %>
+</div>

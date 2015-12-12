@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :diaries
   has_and_belongs_to_many :events
   
   attr_accessor :remember_token
