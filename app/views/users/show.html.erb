@@ -2,7 +2,7 @@
   <div id="profile-view">
     <h3 id="profile-name"><%= @user.name %></h3>
     <div id="profile-picture">
-      <img src="<%= asset_path(@user.email) %>" width="203px" height="auto">
+      <img src="<%= asset-url(@user.id + ".jpg") %>" width="203px" height="auto">
     </div>
     <div class="container">
       <div class="row profile-info">
