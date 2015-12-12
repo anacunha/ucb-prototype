@@ -2,7 +2,7 @@
   <% @events.each do |event| %>
     <div class="diaryEvent">
       <p class="title"><%= event.name %></p>
-      <% diary = @diaries.find_by('event_id == ?', event.id) %>
+      <% diary = @diaries.find_by('event_id = ?', event.id) %>
       <% if diary.nil? %>
         <p class="text">
           <img src="<%= asset_path('empty.png') %>">
