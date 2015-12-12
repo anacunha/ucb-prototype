@@ -36,6 +36,11 @@ a:hover {
   text-decoration: none;
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Header */
 
@@ -594,6 +599,18 @@ i.fa.fa-heart.like {
   padding-right: 10px;
 }
 
+#diaryEvents [type=submit] {
+  background-color: #DDDDDC;
+  color: #000000;
+  margin-top: 1em;
+  width: 100%;
+}
+
+#diaryEvents [type=submit]:hover {
+  color: #FFFFFF;
+  background-color: #5CC0DE;
+}
+
 .diaryEvent {
   padding-bottom: 30px;
   border-bottom: 1px solid #DDDDDC;
@@ -613,4 +630,89 @@ i.fa.fa-heart.like {
 .diaryEvent .text {
   font-size: 1em;
   text-align: left;
+}
+
+
+/* Edit Diary */
+
+.editor {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #979797;
+  width: 100%;
+  background: buttonface;
+}
+
+#toolbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90%;
+  background: buttonface;
+}
+
+.toolbarButton {
+  margin-right: 20%;
+  border: 0;
+  text-align: center;
+  cursor: default;
+  font-size: 1.5em;
+}
+
+.photo-options {
+  background-color: #DDDDDC;
+  border: 1px solid #FFFFFF;
+  padding: .25em 0;
+}
+
+.photo-options a {
+  color: #000000;
+}
+
+.clickedButton {
+  border: 1px;
+  background: grey;
+}
+
+.boldButton {
+  font-weight: bold;
+}
+
+.italicButton {
+  font-style: italic;
+}
+
+.underlineButton {
+  text-decoration: underline;
+}
+
+#camIconTd {
+  width: 50%;
+}
+
+.cameraButton {
+  cursor: pointer;
+  position: relative;
+  height: 30%;
+}
+
+.content {
+  background: buttonface;
+}
+
+.photoMenu {
+  background-color: #FFFFFF;
+  display: none;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#diary-edit input[type=submit] {
+  background-color: #DDDDDC;
+  width: 100%;
+}
+
+#diary-edit input[type=submit]:hover {
+  color: #FFFFFF;
+  background-color: #5CC0DE;
 }

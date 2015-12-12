@@ -1,0 +1,44 @@
+<div class="dropdown">
+  <button class="button dropdown-toggle" type="button" data-toggle="dropdown">
+    Prompts
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#" class="promptChoice">What I learned at this event was ...</a></li>
+    <li><a href="#" class="promptChoice">After attending this event, I feel ...</a></li>
+    <li><a href="#" class="promptChoice">The most important thing about this event was ...</a></li>
+  </ul>
+</div>
+<div id="diary-edit">
+  <%= form_for(@diary, html: { class: 'form-horizontal' }) do |f| %>
+    <div class="editor centered">
+      <table id="toolbar" class="centered">
+        <tr>
+          <td>
+            <input type="button" class="toolbarButton boldButton" value="B">
+          </td>
+          <td>
+            <input type="button" class="toolbarButton italicButton" value="I">
+          </td>
+          <td>
+            <input type="button" class="toolbarButton underlineButton" value="U">
+          </td>
+          <td id="camIconTd"><img src="<%= asset_path('cam.png') %>" class="cameraButton"></td>
+        </tr>
+      </table>
+      <div class="photoMenu">
+        <div class="photo-options"><a href="">Take a Photo</a></div>
+        <div class="photo-options"><a href="">Upload Photo</a></div>
+        <div class="photo-options"><a href="">Use Check-In Photo</a></div>
+      </div>
+      <%= f.text_area :entry, class: 'form-control', id: 'contentArea', placeholder: "Enter text here ...", rows: '15' %>
+      <%= f.hidden_field :user_id, :value => current_user.id %>
+      <%= f.hidden_field :event_id, :value => params[:event] %>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12">
+        <%= f.submit "Save Entry", class: "btn btn-default" %>
+      </div>
+    </div>
+  <% end %>
+</div>

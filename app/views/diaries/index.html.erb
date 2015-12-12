@@ -2,22 +2,23 @@
   <% @events.each do |event| %>
     <div class="diaryEvent">
       <p class="title"><%= event.name %></p>
-      <% if @diaries.find_by('event_id == ?', event.id).nil? %>
+      <% diary = @diaries.find_by('event_id == ?', event.id) %>
+      <% if diary.nil? %>
         <p class="text">
           <img src="<%= asset_path('empty.png') %>">
           Create an entry for this event...
         </p>
-        <a href="edit-diary.html">
-          <button type="button" class="button">Create Entry</button>
-        </a>
+        <%= link_to new_diary_path + '?event=' + event.id.to_s do %>
+          <input type="submit" class="btn bnt-default" value="Create Entry">
+        <% end %>
       <% else %>
         <p class="text">
-          <img src="<%= asset_path('diary.png') %>">
+          <img src="<%= asset_path('diary.jpg') %>">
           <%= diary.entry %>
         </p>
-        <a href="edit-diary.html">
-          <button type="button" class="button">Edit Entry</button>
-        </a>
+        <%= link_to edit_diary_path(diary) + '?event=' + event.id.to_s do %>
+          <input type="submit" class="btn bnt-default" value="Edit Entry">
+        <% end %>
       <% end %>   
     </div>
   <% end %>

@@ -12,11 +12,11 @@
         <span class="button-text">EVENTS</span>
       </button>
     <% end %>
-    <a class="home-option" href="diary/diary.html">
+    <%= link_to diaries_path, class: "home-option", method: :get do %>
       <button class="btn btn-primary btn-lg home-option">
         <i class="fa fa-pencil-square fa-5x button-logo"></i>
         <span class="button-text">MY DIARY</span>
       </button>
-    </a>
+    <% end %>
   </div>
 </div>
