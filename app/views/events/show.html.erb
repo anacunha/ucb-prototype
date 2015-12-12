@@ -33,33 +33,18 @@
         Who is going?
       <% end %>
     </h3>
-    <div id="attendees">
-      <div class="attendee">
-        <div class="placeholder"></div>
-        Ana
-      </div>
-      <div class="attendee">
-        <div class="placeholder"></div>
-        Lily
-      </div>
-      <div class="attendee">
-        <div class="placeholder"></div>
-        Stefan
-      </div>
-      <div class="attendee">
-        <div class="placeholder"></div>
-        Harshil
-      </div>
-      <div class="attendee">
-        <div class="placeholder"></div>
-        Harshil
-      </div>
-      <div class="attendee">
-        <div class="placeholder"></div>Hannah
-      </div>
+    <div id="attendees" class="row">
+      <% @event.users.each do |user| %>
+        <%= link_to user_path(user) do %>
+          <div class="attendee">
+            <div class="placeholder"></div>
+              <%= user.name %>
+          </div>
+        <% end %>
+      <% end %>
     </div>
     <div id="more">
-      <a href="#">more</a>
+      <a href=''>more</a>
     </div>
     
     <% if @rsvp %>

@@ -1,1 +1,8 @@
 <%= @user.name %>, <%= @user.email %>
+
+<h4>Events Attending</h4>
+<ul>
+  <% @user.events.each do |event| %>
+    <li><%= event.name %></li>
+  <% end %>
+</ul>
