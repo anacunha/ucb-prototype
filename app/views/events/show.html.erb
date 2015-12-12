@@ -37,7 +37,11 @@
       <% @event.users.each do |user| %>
         <%= link_to user_path(user) do %>
           <div class="attendee">
-            <div class="placeholder"></div>
+            <div class="placeholder">
+              <% if asset_exists?(user.email + ".jpg") %>
+                <img src="<%= asset_path(user.email + ".jpg") %>" width="45px" height="45px">
+              <% end %>
+            </div>
               <%= user.name %>
           </div>
         <% end %>

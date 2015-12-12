@@ -1,9 +1,13 @@
 <div class="row">
   <div id="profile-view">
     <h3 id="profile-name"><%= @user.name %></h3>
-    <div id="profile-picture">
-      <img src="<%= asset_path(@user.email + ".jpg") %>" width="203px" height="auto">
-    </div>
+    <% if asset_exists?(@user.email + ".jpg") %>
+      <div id="profile-picture">
+        <img src="<%= asset_path(@user.email + ".jpg") %>" width="203px" height="auto">
+      </div>
+    <% else %>
+      <div id="profile-picture-placeholder"></div>
+    <% end %>
     <div class="container">
       <div class="row profile-info">
         <div class="col-sm-1"></div>
