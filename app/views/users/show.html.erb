@@ -1,8 +1,40 @@
-<%= @user.name %>, <%= @user.email %>
+<div class="row">
+  <div id="profile-view">
+    <h3 id="profile-name"><%= @user.name %></h3>
+    <div id="profile-picture">
+      <img src="<%= asset_path(@user.email) %>" width="203px" height="auto">
+    </div>
+    <div class="container">
+      <div class="row profile-info">
+        <div class="col-sm-1"></div>
+        <label class="col-sm-5 control-label">Partner Organization</label>
+        <div class="col-sm-5">
+          <%= @user.partner_organization %>
+        </div>
+      </div>
 
-<h4>Events Attending</h4>
-<ul>
-  <% @user.events.each do |event| %>
-    <li><%= event.name %></li>
-  <% end %>
-</ul>
+      <div class="row profile-info">
+        <div class="col-sm-1"></div>
+        <label class="col-sm-5 control-label">Email</label>
+        <div class="col-sm-5">
+          <%= @user.email %>
+        </div>
+      </div>
+
+      <div class="row profile-info">
+        <div class="col-sm-1"></div>
+        <label class="col-sm-5 control-label">Phone</label>
+        <div class="col-sm-5">
+          -
+        </div>
+      </div>
+      <div class="row profile-info">
+        <div class="col-sm-1"></div>
+        <label class="col-sm-5 control-label">Neighborhood</label>
+        <div class="col-sm-5">
+          Boston
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
